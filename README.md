@@ -44,3 +44,25 @@ for communicating with the PIC micro.
 
 The ESP8266 will also house the ZyloBot c irc bot, which is a minimal irc client build
 into the micro controller.
+
+The ESP8266 is very overkill for this projects in terms of the power of its build in
+microcontroller, the amount of ram is insane in microcontroller circles and its running
+at a whopping 60mhz. (the PIC is running at 8mhz).
+
+We use it for its WiFi capabilities and its low cost (around $3), also we build
+in the irc bot as it makes more sense to have it on the wifi module than on the pic.
+We don't have room for large buffers on the pics 1024bytes of ram !
+
+The general flow is as follows:
+
+* WifI module ESP8266 connects to wifi.
+* Wifi module connects to IRC on a predefined server/channel
+* When the wifi module gets PRIVMSG'd with certain commands, it encode the string
+  message to something easy for the PIC to understand and communicate this via
+  serial port communications to the PIC (UART).
+* The pic will translate the received commands to keyboard scan codes and send
+  this out via usb hid.
+
+
+
+
