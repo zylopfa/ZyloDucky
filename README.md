@@ -64,5 +64,5 @@ The general flow is as follows:
   this out via usb hid.
 
 
-
+![Picture of microcontrollers](./images/principle-mcus.png)
 
