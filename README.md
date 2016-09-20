@@ -66,3 +66,22 @@ The general flow is as follows:
 
 ![Picture of microcontrollers](./images/principle-mcus.png)
 
+
+### BOM (bill of materials)
+
+ * PIC16F1459
+ * ESP8266-12E Wireless transciever module
+ * Stripboard / Veroboard
+ * 
+
+
+
+### How its put together
+
+The prototype has been put together on a stripboard/veroboard in order to facilitate
+a quick and cheap process from idea to working product.
+
+The PIC16F1459 was ordered in SOIC format, that is for use as a surfacemount component,
+it makes it a bit harder to solder manually, but its doable with some patience.
+
+
