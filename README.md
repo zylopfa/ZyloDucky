@@ -84,4 +84,5 @@ a quick and cheap process from idea to working product.
 The PIC16F1459 was ordered in SOIC format, that is for use as a surfacemount component,
 it makes it a bit harder to solder manually, but its doable with some patience.
 
+![Picture of prototype ZyloDucky](./images/prototype.png)
 
